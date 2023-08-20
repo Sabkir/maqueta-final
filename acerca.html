@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon"
+    href="https://scontent.fhex5-1.fna.fbcdn.net/v/t39.30808-6/253168901_4585459888141604_3592499612428314435_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFl3SGacD-X7GxaZL6cQCIIb3krdjOTkr1veSt2M5OSvcjFHMp0wcUthWjjrnFnTMlEvL5eeSvf7xG4Tg-cRaov&_nc_ohc=92vpWj0qfuQAX_o0bUw&_nc_ht=scontent.fhex5-1.fna&oh=00_AfAIOfVX_0pUnLzihqgp5fEcHY2DKKCZhv6qegZtzv8lKA&oe=64E7534B"
+    type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina de Ejemplo para Proyecto Web Basico con HTML5, CSS de IHC">
+  <meta name="keywords" content="HTML, Bootstrap, CSS, JavaScript">
+  <meta name="author" content="ING. JUANCITO PEÑA">
+  <meta name="copyright" content="https://advisertecnology.com/" />
+  <title>Mini Blog con HTML5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <a class="navbar-brand" href="#">BIENVENIDOS A MI MINI-BLOG</a>
+        <nav class="nav-menu">
+          <a href="index.html">Inicio</a>
+          <a href="acerca.html">Acerca de</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="contactos.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="row">
+        <section class="col-68">
+          <h2 class="h4 mp-5 pt-5">¿Quien Soy?</h2>
+
+          <!--ARTICULOS-->
+          <article>
+
+            <hr>
+            <p class="Articulo1">
+              Mi Nombre es <strong>Sabkir Omar Pelaez Mena</strong>, soy Egresado de la Universidad Dominicana O&M, como Ingeniero en
+              Sistemas y
+              Computación busco hacer el Postgrado y la Maestria</p>
+
+            <img class="foto" src="https://scontent.fhex5-1.fna.fbcdn.net/v/t39.30808-6/253168901_4585459888141604_3592499612428314435_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFl3SGacD-X7GxaZL6cQCIIb3krdjOTkr1veSt2M5OSvcjFHMp0wcUthWjjrnFnTMlEvL5eeSvf7xG4Tg-cRaov&_nc_ohc=92vpWj0qfuQAX_o0bUw&_nc_ht=scontent.fhex5-1.fna&oh=00_AfAIOfVX_0pUnLzihqgp5fEcHY2DKKCZhv6qegZtzv8lKA&oe=64E7534B" alt="Foto"><br>
+            <!-- <h3 class="sklill">Data Analyst | Front-end | Back-end |Movil Developer | instructor | Blogger</h3> -->
+           
+            
+                
+            <p class="Articulo1">
+              Soy un entusiasta de la Programacion. Mi pasión por el
+              Codigo, los juegos y los numeros 
+              <br> <br>
+              Reconozco el valor de las tecnologías, y los aportes a las mejoras productivas.
+              voy por el 10mo cuatrimestre en la OYM y el profesor con el que mejor me eh llevado es el de esta asignatura.
+              ya que tiene demasiado conocimiento y quisiera poder sacarle el jugo a todo su conocimiento
+              tecnológicos, administrativos, productivos y de marketing, me ha enseñado implementaciones de Software
+              para las mejores
+              tomas de decisiones con Inteligencia de Datos, desde el problema, los requerimientos hasta el testing,
+              lanzamiento, y
+              entrenamiento del personal, con este profesor eh ten experiencia y pasión por el Desarrollo Web Frontend /
+              Backend con (HTML, CSS,
+              JavaScrip, PHP, Python, C#).
+              <br> <br>
+              En anteriores cuatrimestre se me ah quedado el Conocimientos en Administracion de Redes y Cableado Estructurado, y manejo Sistemas Operativos
+              Windows Server, Linux, Sistemas de
+              Telefonía IP (Grandstream, Issabel, Elastix), Ciberseguridad, Firewall, ACL, Proxy, P.SI., Routing y
+              Switching.
+            </p>
+
+         
+            <h3 class="skill">Mis Skills:</h3>
+           
+            <table>
+              <tr>
+                <th>Habilidad</th>
+                <th>Dominio</th>
+              </tr>
+              <tr>
+                <td><span>📊</span> Dev Web</td>
+                <td><progress value="40" max="100"></progress></td>
+              </tr>
+              <tr>
+                <td><span>🖥️</span> Front-end Developer</td>
+                <td><progress value="60" max="100"></progress></td>
+              </tr>
+              <tr>
+                <td><span>⚙️</span> Back-end Developer</td>
+                <td><progress value="75" max="100"></progress></td>
+              </tr>
+              <tr>
+                <td><span>📱</span> Mobile Developer</td>
+                <td><progress value="85" max="100"></progress></td>
+              </tr>
+              <tr>
+                <td><span>✍️</span> Estudiante</td>
+                <td><progress value="90" max="100"></progress></td>
+              </tr>
+            </table>   
+
+
+            <script>
+              const skillList = document.querySelectorAll('.skill-list li progress');
+            
+              skillList.forEach(progressBar => {
+                progressBar.value = Math.floor(Math.random() * 101); // Genera valor aleatorio entre 0 y 100
+              });
+            </script>
+
+
+          </article>
+          
+          <hr>
+          <div class="centrar-contenido">
+          <div class="redes">
+            <h2>Sigueme en mi Redes Sociales</h2>
+
+            <!-- Agregamos font awesome icons -->
+            <a href="https://www.youtube.com/@konoru" class="fa fa-youtube-square" style="font-size:48px; color: blue;"></a>
+            <a href="https://www.facebook.com/sabkiromar.pelaezmena/" class="fa fa-facebook-square" style="font-size:48px; color: blue;"></a>
+            <a href="https://github.com/Sabkir" class="fa fa-github-square" style="font-size:48px; color: blue;"></a>
+            <a href="https://www.instagram.com/sabkir_mena/" class="fa fa-instagram" style="font-size:48px; color: blue;"></a>
+          
+            
+          </div>
+        </div>
+
+
+
+        </section>
+
+                <!-- Barra lateral -->
+                <aside class="col-28">
+                  <h2 class="h4">💚Tus Anuncios con Nostros lo ven todos</h2>
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <img src="https://i.ytimg.com/an_webp/p_jPc32zpPA/mqdefault_6s.webp?du=3000&sqp=CNDbhacG&rs=AOn4CLAWAIEPIuwqMqrOi_Jknvm4txRe-Q" alt="Anuncio publicitario"
+                      class="img-fluid rounded mb-2">
+                    <p class="text-center">The Legend of Zelda: Tears of the Kingdom - 1.er tráiler oficial (Nintendo Switch)</p>
+                    <a href="https://www.youtube.com/watch?v=p_jPc32zpPA&pp=ygUldHJhaWxlciBkZSB6ZWxkYSB0ZWFycyBvZiB0aGUga2luZ2RvbQ%3D%3D" class="btn btn-success">Ver</a>
+                  </div>
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <img src="https://i.ytimg.com/an_webp/d9rdl3fGfYQ/mqdefault_6s.webp?du=3000&sqp=CLTihacG&rs=AOn4CLAsmrbIdWabsTdjct_fDjvG6LbKWA" alt="Anuncio publicitario"
+                      class="img-fluid rounded mb-2">
+                    <p class="text-center">The Legend of Zelda: Tears of the Kingdom - 2.º tráiler oficial (Nintendo Switch)</p>
+                    <a href="https://www.youtube.com/watch?v=d9rdl3fGfYQ&pp=ygUldHJhaWxlciBkZSB6ZWxkYSB0ZWFycyBvZiB0aGUga2luZ2RvbQ%3D%3D" class="btn btn-success">Ver</a>
+                  </div>
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <img src="https://i.ytimg.com/an_webp/gp9aY09li1s/mqdefault_6s.webp?du=3000&sqp=CJ_fhacG&rs=AOn4CLBvm8YWBK1f39xdoVGHXrF1TLmzng"
+                      alt="Anuncio publicitario" class="img-fluid rounded mb-2">
+                    <p>The Legend of Zelda: Tears of the Kingdom - 3.er tráiler oficial (Nintendo Switch)</p>
+                    <a href="https://youtu.be/gp9aY09li1s" class="btn btn-success">Ver </a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <img class="web"
+                      src="https://i.ytimg.com/vi/RGuvu9voMp4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPKE6oYsbgGiw2KhU4UA2o-FEh6g"
+                      alt="Anuncio publicitario" class="img-fluid rounded mb-2">
+                    <p>The Legend of Zelda: Tears of the Kingdom - Tráiler de notas (Nintendo Switch)
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=RGuvu9voMp4" class="btn btn-success">Ver</a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <img src="https://i.ytimg.com/an_webp/ADgucQ47ou8/mqdefault_6s.webp?du=3000&sqp=CP_7hacG&rs=AOn4CLBnTiL_y3eoNoPQFCzUgFWImc6rNQ" alt="Anuncio publicitario"
+                      class="img-fluid rounded mb-2">
+                    <p>The Legend of Zelda: Tears of the Kingdom - Demostración de juego con Eiji Aonuma (Nintendo Switch)
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=ADgucQ47ou8&t=22s" class="btn btn-success">Ver </a>
+                  </div>
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <img src="https://i.ytimg.com/vi/QLbZxMDHqdQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA-T0sUXeLtZFtDZXnNOgPqTCl8mA" alt="Anuncio publicitario"
+                      class="img-fluid rounded mb-2">
+                    <p class="text-center">The Legend of Zelda: Tears of the Kingdom – ¡Ya disponible! (Nintendo Switch)</p>
+                    <a href="https://www.youtube.com/results?search_query=nintendo+espa%C3%B1a+zelda+tears+of+the+kingdom" class="btn btn-success">Ver</a>
+                  </div>
+                  
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/3W78sLvMtf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>Zelda TotK: BEST MOMENTS!
+                    </p>
+                    <a href="https://www.youtube.com/results?search_query=zelda+tears+of+the+kingdom+moments" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/lT8qBL4Ubso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>The Legend of Zelda: Tears of the Kingdom – Mensaje del lanzamiento
+                    </p>
+                    <a href="https://www.youtube.com/results?search_query=nintendo+espa%C3%B1a+zelda+tears+of+the+kingdom" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/fS7OStr2_ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>Zelda TOTK Funny Fails & Builds & Funny Moments #9
+                    </p>
+                    <a href="https://www.youtube.com/shorts/jcatAjee2Rc" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/06NMfUTYbXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>Tears of the Kingdom OST - Colgera Boss Theme | The COOLEST track in all of Zelda!
+        
+                    </p>
+                    <a href="https://www.youtube.com/results?search_query=zelda+tears+of+the+kingdom+soundtrack" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/nZS2TsJjZTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>Gameplay ZELDA TEARS OF THE KINGDOM: ¡¡¡YA LO HEMOS PROBADO!!!
+                    </p>
+                    <a href="https://www.youtube.com/@vandal" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/zcq1M5LDW-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>Ganondorf, el Rey Demonio - The Legend of Zelda: Tears of the Kingdom
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=InRg_ShuHco" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+        
+        
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/r4VRZbVGjmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>La CRONOLOGÍA de Zelda: Tears of the Kingdom EXPLICADA
+                    </p>
+                    
+                    <a href="https://www.youtube.com/@Mundo_N" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+        
+                  
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/wmWvLZIffmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>Quienes son los ZONAN y por qué son TAN IMPORTANTES en Zelda Tears of the Kingdom!?
+                    </p>
+        
+                    <a href="https://www.youtube.com/@Dan-PuertaAlSotano" class="btn btn-success">Ver más Videos</a>
+        
+                  </div>
+        
+                </aside>
+
+
+      </div>
+
+    </main>
+    <footer class="bg-primary text-white mt-4">
+      <h2>2023 Sabkir Pelaez M.</h2>
+    </footer>
+  </div>
+
+</body>
+
+</html>
